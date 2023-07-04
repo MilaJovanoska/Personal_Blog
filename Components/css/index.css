@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("../../Sliki/Pozadina8.jpg");
+    font-family: -apple-system, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.GlavenDiv {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 9rem;
+}
+
+
+.butterfly_jar {
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    user-select: none;
+}
+
+#butterfly {
+    width: 100%;
+    height: 100%;
+}
+
+body>div>nav>p {
+    font-size: 2.25rem;
+    color: #fc4598;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 33%;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    background: #fdc9d2;
+    border-radius: 6px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fc4598;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+hr {
+    border-top: 1px solid #fc4598;
+    margin-top: 1rem;
+}
+
+.content_container {
+    background: rgba(252, 69, 152, .9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+.Sliki1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    width: 360px;
+    height: 360px;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.image:hover {
+    transform: scale(1.025);
+}
+
+.image:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.image.flip {
+    transform: rotateY(180deg);
+}
+
+.image_front,
+.image_back {
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    backface-visibility: hidden;
+}
+
+.image_front {
+    transform: rotateY(180deg);
+}
+
+.image_front {
+    color: #fc4598;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+    color: white;
+    font-size: 120%;
+    margin-top: -2.5rem;
+}
+
+
+img{
+    object-fit: cover;
+}

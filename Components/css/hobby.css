@@ -1,0 +1,25 @@
+.hobby_text{
+  font-size: 120%;
+  color: white;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.hobby_text a{
+  color: rgb(240, 240, 240);
+  transition: color .25s ease-in-out;
+}
+
+.hobby_text a:hover{
+  text-decoration: none;
+  color: #9b2459;
+}
+
+.section_title{
+  color: white;
+  font-size: 350%;
+  margin-top: -1.5rem;
+  margin-bottom: -.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}

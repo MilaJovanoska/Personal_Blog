@@ -1,0 +1,88 @@
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+    color: white;
+    font-size: 120%;
+    margin-top: -2.5rem;
+}
+
+.AboutMe {
+    width: 45%;
+}
+
+.AboutMe p {
+    text-align: justify;
+}
+
+.GetInTouch{
+    width: 45%;
+}
+
+.contact_form_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contant_form_items_container{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.contact_form_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    -webkit-appearance: none; 
+    border-radius: 5px;
+    border: 2px solid #c94581;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    color: black !important;
+    width: 300px;
+    padding: .35rem;
+}
+
+#submit_button{
+    width: 200px;
+    align-self: center;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 2px solid #c94581;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    transition: transform .25s ease-in-out, background-color .25s ease-in-out, border .25s ease-in-out, color .25s ease-in-out;
+    cursor: pointer;
+}
+
+#submit_button:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: #c94581;
+    transform: scale(1.025);
+}
+
+#submit_button:active{
+    background-color: #ab356a;
+    transform: scale(0.975);
+}
+
+:-webkit-autofill { 
+    color: #fff !important; 
+}
+
+.icons_container{
+    display: flex;
+    gap: 3rem;
+    align-self: center;
+}
+
+.contact_icon{
+    width: 30px;
+    height: 30px;
+}
